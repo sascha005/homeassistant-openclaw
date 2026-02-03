@@ -6,7 +6,7 @@ FROM ${BUILD_FROM}
 # Toolchain deps: some npm packages use native addons.
 RUN apk add --no-cache \
   nodejs npm bash curl jq git \
-  python3 make g++ libc6-compat
+  python3 make g++ libc6-compat cmake
 
 RUN npm install -g openclaw
 
