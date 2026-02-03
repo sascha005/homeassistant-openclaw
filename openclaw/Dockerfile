@@ -3,7 +3,10 @@ FROM ${BUILD_FROM}
 
 # Home Assistant add-on base is Alpine.
 # Install nodejs + npm, then install OpenClaw.
-RUN apk add --no-cache nodejs npm bash curl jq
+# Toolchain deps: some npm packages use native addons.
+RUN apk add --no-cache \
+  nodejs npm bash curl jq git \
+  python3 make g++ libc6-compat
 
 RUN npm install -g openclaw
 
