@@ -2,7 +2,7 @@ name: OpenClaw
 slug: openclaw
 version: "0.1.0"
 description: "Run OpenClaw Gateway locally inside Home Assistant OS (exposes OpenAI-compatible /v1/chat/completions for Assist)."
-url: "https://github.com/<YOUR_GH_USER>/homeassistant-openclaw"
+url: "https://github.com/sascha005/homeassistant-openclaw"
 arch:
   - amd64
 init: false

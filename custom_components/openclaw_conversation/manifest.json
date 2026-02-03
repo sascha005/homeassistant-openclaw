@@ -2,7 +2,7 @@
   "domain": "openclaw_conversation",
   "name": "OpenClaw Conversation Agent",
   "version": "0.1.0",
-  "documentation": "https://github.com/<YOUR_GH_USER>/homeassistant-openclaw",
+  "documentation": "https://github.com/sascha005/homeassistant-openclaw",
   "requirements": [],
   "codeowners": [],
   "config_flow": true,

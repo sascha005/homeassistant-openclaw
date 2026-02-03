@@ -15,7 +15,7 @@ Private repo intended to run OpenClaw *locally* inside Home Assistant OS and use
 
 1. Home Assistant → **Settings → Add-ons → Add-on Store → ⋮ → Repositories**
 2. Add this repo URL (after you create it on GitHub):
-   - `https://github.com/<YOUR_GH_USER>/homeassistant-openclaw`
+   - `https://github.com/sascha005/homeassistant-openclaw`
 3. Install add-on **OpenClaw**.
 4. Configure add-on:
    - `auth_token`: generate a strong token (32+ random chars)
