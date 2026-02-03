@@ -8,7 +8,9 @@ RUN apk add --no-cache \
   nodejs npm bash curl jq git \
   python3 make g++ libc6-compat cmake
 
-RUN npm install -g openclaw
+# Avoid installing heavy peer deps (node-llama-cpp) inside HA OS add-on.
+# We don't need local llama.cpp; we use remote models via OpenAI-compatible providers.
+RUN npm install -g --omit=peer openclaw
 
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
